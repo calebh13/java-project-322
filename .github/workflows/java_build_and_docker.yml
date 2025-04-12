@@ -28,5 +28,5 @@ jobs:
         with:
           image: ${{ vars.DOCKER_USERNAME }}/javaprojectimage:latest
           registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: ${{ vars.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
